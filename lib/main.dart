@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_rehan/home_page.dart';
 
 // Created by Rehan Ahsani on 6-5-2022
 void main() {
@@ -11,13 +12,7 @@ class Myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: Text("Welcome Rehan Ahsani"),
-          ),
-        ),
-      ),
+      home: HomePage(),
     );
   }
 }
