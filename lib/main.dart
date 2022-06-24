@@ -1,8 +1,6 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
-import 'package:flutter_application_rehan/pages/home_page.dart';
 import 'package:flutter_application_rehan/pages/login_page.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 // Created by Rehan Ahsani on 6-5-2022
 void main() {
@@ -15,16 +13,14 @@ class Myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        // home: HomePage(), 
-        darkTheme: ThemeData(
-          brightness: Brightness.light
-        ),  
-        
-         routes:{
-    "/":(context) => LoginPage(),
-  },
-
-  );
- 
+      themeMode: ThemeMode.light,
+      theme: ThemeData(
+          primarySwatch: Colors.deepPurple,
+          fontFamily: GoogleFonts.lato().fontFamily),
+      // home: HomePage(),
+      routes: {
+        "/": (context) => LoginPage(),
+      },
+    );
   }
 }
